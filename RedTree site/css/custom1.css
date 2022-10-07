@@ -1,0 +1,231 @@
+:root {
+	--myred: rgba(145, 13, 12, 1.0);
+	--sinispurple:  rgba(152, 99, 227, 1.0);
+	--lunaeblue: rgba(107, 157, 227, 1.0); 
+}
+
+body, header, footer, h1, h2, h3, h4, h5, nav, main, aside, img, section, p, a {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;}
+
+body {
+	background: rgba(0, 0, 0, 1.0);
+	margin: .5%;
+	padding: .5%;}
+
+header { 
+ 	background-image: linear-gradient(var(--myred), black);
+ 	color: var(--myred);
+ 	height: 35%;
+    /*background-image: url('../Images...jpg');*/
+    /*background-repeat: no-repeat;'*/
+    padding: 1%;
+    border-bottom: rgba(0, 0, 0, 1.0) !important;}
+
+h1 {
+	color: rgba(0, 0, 0, 1.0);
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 300%;
+	margin-bottom: 2%;}
+
+h2 {
+	display: block;
+	text-align: center;
+	padding-top: 8%;
+	font-size: 160%;
+	font-style: italic;}
+
+section {
+	/*margin-top: 15%;*/
+	box-sizing: border-box;
+	width: 99%;
+	/*border-bottom: 1px solid rgba(145, 12, 13, 1.0);*/
+	padding-bottom: 2%;}
+
+nav {
+	/*font-size: 2em;*/
+	margin: 0 auto;
+	position: relative;
+	top: 30%;
+	padding-bottom: 2%;}
+
+nav >a {
+	display: inline-block;
+	font-family: arial;
+	text-align: center;
+	width: 16%;
+	font-size: .8em;
+	margin: 1%;
+	text-decoration: none;
+	/*position:relative; */
+	top: 5%;
+	left: 5%;
+	color:var(--myred);}
+
+.nav >a {
+ 	color: rgba(0, 0, 0, 1.0);
+ 	margin: auto;}
+
+.return > a {
+	position: relative;
+	top: 4vh;
+	display: block;
+	/*margin: auto;
+	background-color: rgba(0, 0, 0, 1.0);*/
+   margin: 0 auto;
+   text-align: center;
+   text-decoration: none;
+	color: var(--myred);}
+
+footer{
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 1.0), var(--myred));
+	height:12vh;
+	width: 98%;
+	margin-top: 2%;
+	color: rgba(0, 0, 0, 1.0);}
+
+.redsaga{
+	margin-top: 6%;
+	color: rgba(0, 0, 0, 1.0);
+	background-image: url("../Imgs/lightningbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;}
+
+.redsaga h2{
+	color: rgba(0, 0, 0, 1.0);
+	margin-top: 10%;}
+	
+
+.sinistersaga{
+	margin-top: 15%;
+	color: var(--sinispurple);
+	background-image: url("../Imgs/crystal2bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;}
+
+.sinistersaga h2 {
+	color: var(--sinispurple);}
+
+.lunae {
+	margin-top: 15%;
+	color: var(--lunaeblue);
+	background-image: url("../Imgs/novelsbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--lunaeblue)}
+
+.mails {
+	bottom: 2vh;*/
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.5em;}
+
+nav >a:hover {
+	color: var(--lunaeblue) !important;}
+
+.nav-tabs {
+	font-size: 130%;
+	--bs-nav-tabs-border-width: 0px;}
+
+
+nav >.active {
+	color: var(--lunaeblue)!important;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, .5) !important;
+	border: 1px solid black !important;}
+
+.flexy {
+	margin: 0 auto;}
+
+img {
+	display: inline-block;
+	width: 40%;
+	box-sizing: border-box;
+	margin: 2%;
+	border: 1px;
+	transition: 0.5s ease;}
+
+.full {
+		min-height: 100vh;
+		margin-bottom: 1vh;}
+
+@media screen and (min-width: 700px){
+
+	.redsaga, .sinistersaga, .lunae {
+		background: black;}
+
+	h2 {
+		display: none;}
+
+	section {
+		
+		box-sizing: border-box;
+		width: 98%;
+		height: 8vh;
+		padding-bottom: 2%;
+		font-size: 1.2em;}
+
+	div{
+		margin-top: 10vh;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-content: space-around;
+	
+	}
+
+
+	img{
+		width: 40vw;
+		/*box-sizing: border-box;*/
+		margin: 2%;
+		border: 2px solid black;
+		transition: 0.5s ease;
+		margin: 10%;}
+
+	img:hover{
+		transform: scale(1.5);}
+
+	/*.flexy {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		justify-content: space-evenly;
+		align-items: center;}
+*/
+	
+	footer{
+	text-align: left;
+	font-size: 130%;}
+
+	footer > p{
+		display: inline-block;
+		float: right;
+	}
+
+.mails{
+	text-align: left;
+	position: relative;
+	top: 4vh;}
+}
+
+@media screen and (min-width: 900px){
+
+	img{
+		width: 15vw;}
+
+	.redsaga {
+		margin-top: 3%;
+	}
+
+	.sinistersaga, .lunae {
+		margin-top: 8%;
+	}
+}

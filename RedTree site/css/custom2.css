@@ -1,0 +1,249 @@
+:root {
+	--myred: rgba(145, 13, 12, 1.0);
+	--sinispurple:  rgba(152, 99, 227, 1.0);
+	--lunaeblue: rgba(107, 157, 227, 1.0);}
+
+body, header, footer, h1, h2, h3, h4, h5, nav, main, aside, img, section, p, a{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;}
+
+
+body{
+	background: rgba(0, 0, 0, 1.0);
+	margin: 1%;
+	padding: 1%;}
+
+.full{
+		min-height: 100vh;
+		margin-bottom: 1vh;}
+
+
+ header{ 
+ 	background-image: linear-gradient(rgba(145, 12, 13, 1.0), rgba(0, 0, 0, 1.0));
+ 	color: rgba(0, 0, 0, 1.0); /*black*/
+ 	height: 30%;
+   padding: 1%;}
+
+h1{
+	font-family: Georgia, Arial;
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 300%;
+	margin-bottom: 2%;}
+
+main{
+	box-sizing: border-box;
+	width: 99%;
+	padding-top: 5%;
+	padding-bottom: 13%;
+	font-size: 1.2em;}
+
+
+nav{
+	font-size: 1.1em;
+	margin: 0 auto;
+	position: relative;
+	top: 30%;
+	padding-bottom: 2%;}
+
+h2{
+	display: none;}
+
+nav >a{
+	display: inline-block;
+	font-family: arial;
+	text-align: center;
+	width: 16%;
+	margin: 1%;
+	text-decoration: none;
+	top: 5%;
+	left: 5%;
+	color: var(--myred);}
+
+.nav a{
+ 	color: var(--myred);
+ 	margin: auto;}
+
+footer{
+	background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(145, 12, 13, 1.0));
+	height: 12vh;
+	width: 98%;
+	margin-top: 2%;
+	color: rgba(0, 0, 0, 1.0);}
+
+footer > p{
+		 font-size: 1.5em;}
+
+.mails{
+	text-decoration: underline;
+	font-size: 1.5em;}
+
+.nav-tabs{
+	border-bottom: 2px solid black;
+	--bs-nav-tabs-border-width: 0px;}
+
+.nav-link:nth-child(3){
+ 	font-size: .8em;}
+
+.nav a:hover {
+ 	color: var(--lunaeblue);
+ 	border: none !important;}
+
+nav .active {
+	color: var(--lunaeblue) !important;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, .5) !important; 
+	border: 1px solid rgba(145, 12, 13, 0.7)!important; 
+	padding:2px;}
+
+img {
+	display: block;
+	width: 30vw;
+	box-sizing: border-box;
+	margin: 2%;
+	margin-top: 10%;
+	padding: .5%;}
+
+.redsaga{
+	background-image: url("../Imgs/lightningbg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;}
+
+.redsaga img {
+	display: inline-block;
+	width: 30vw;
+	box-sizing: border-box;
+	margin: 2%;
+	padding: .5%;}
+
+.sinistersaga {
+	background-image: url("../Imgs/crystal2bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 95vw 100vh;}
+
+.sinistersaga img{ 
+	display: inline-block;
+	width: 25%;
+	box-sizing: border-box;
+	padding: .5%;}
+
+.redsaga p {
+	color: var(--myred);
+	margin:  0 auto;
+	position: relative;
+	top: 2vh;
+	margin-inline-start: 1%;
+	text-indent: 3%;
+	background: rgba(0, 0, 0, .6);}
+
+.sinistersaga p {
+ 	color: var(--sinispurple);
+	margin:  0 auto;
+	margin-inline-start: 1%;
+	text-indent: 3%;
+	position: relative;
+	top: 15vh;
+	background: rgba(0, 0, 0, .6)}
+
+.lunae{
+	background-image: url("../Imgs/lunaebg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	text-align: center;
+	color: var(--lunaeblue);
+	margin:  0 auto;
+	margin-inline-start: 1%;
+	text-indent: 3%;
+	font-size: .9em;}
+
+.lunae img{
+	margin-top: 3%;
+	margin: 0 auto;}
+
+.lunae h2{
+	display: block;
+	text-align: center;
+ 	color: var(--lunaeblue);
+   background: rgba(0, 0, 0, .6);
+	margin-top: 2%;}
+
+
+.kao{
+	background-image: url("../Imgs/kaobg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	color: var(--lunaeblue);
+	padding-top: 3%;
+	margin-inline-start: 1%;
+	text-indent: 3%;}
+
+.kao p{
+	background: rgba(0, 0, 0, 0.6);
+	margin-top: 3%;}
+
+.lunae p{
+	background: rgba(0, 0, 0, .6);}
+
+.kao img {
+	margin: 0 auto;}
+
+
+.flexy{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;}
+
+
+
+@media screen and (min-width: 700px){
+
+	img{
+		display: inline-block;
+		width: 25%;
+		margin: 0 auto;}
+
+	.redsaga img{
+		width: 20%;}
+
+	.flexy2{
+		flex-wrap: nowrap;}
+		
+   .lunae{
+   	margin: 2%;
+   	clear: both;
+   	margin-bottom: 10%;}
+
+   .lunae img, .kao img{
+   	float: left;}   	   
+
+   .lunae h2{
+   	margin-top: 12%;
+		display: inline-block;
+		width: 25%;}
+
+   .lunae p{
+   	width: 70%;
+   	display: inline-block;
+   	margin-bottom: 10%;
+   	margin-top: 1%;
+   	font-size: 1.2em;}
+
+   .kao p{
+   	width: 70%;
+   	display: inline-block;
+     	margin-top: 15%;
+   	margin-bottom:17%;
+   	font-size: 1.2em;}
+}
+
+ @media and screen(min-width: 860px){
+
+ 	div.flexy{
+			flex-wrap: nowrap;}
+}

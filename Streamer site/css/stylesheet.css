@@ -1,0 +1,226 @@
+body, header, h1, h2, h3, h4, h5, nav, main, aside, img, section, p {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    color: rgba(255, 255, 255, 1.0); /*white*/
+    background-color: rgba(0, 0, 0, 1.0); /*black*/
+}
+
+body{
+	background-color: rgba(0, 0, 0, 1.0); /*black*/
+}
+
+.fullvp{
+	min-height: 100vh;
+	margin-bottom: 1vh;}
+
+
+.left, .right{
+	display: none;
+} 
+
+
+header{
+	height: 24vh;
+	background: black; 
+	box-sizing: border-box;
+	background-image: url('../imgs/Buttons1.png');
+	background-repeat: no-repeat;
+	margin-bottom: 9vh;
+	background-size: 98%;
+	padding: 5%;
+	}
+
+.mainrow {
+	margin: 5%;
+	}
+
+ .fa-solid{
+ 	margin-top: 8%;
+ 	text-align: center;
+ 	width: 95%;
+ 	display: inline-block;
+ 	color: rgba(239, 32, 147, .8); /*hot pink*/
+ }
+.fa-brands{
+	display: inline-block;
+	color: rgba(255, 204, 255, .8); /*lt pink*/
+	margin-left: 5vw;
+	margin: 2%;
+
+}
+h1{
+	font-size: 300%;
+	color: blueviolet;
+	text-align: center;
+	position: relative;
+	top: 18vh;
+	background-color: rgba(0, 0, 0, 0.1);
+	} 
+
+h2{
+	font-size: 250%;
+	margin-bottom: 2%;
+	color: blueviolet;
+	text-align: center;
+}
+
+
+.label{
+	color: blueviolet;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 150%;
+	font-family: "Times New Roman",Courier, Helvetica;
+}
+
+.watchme{
+	margin: 0 auto;
+	width: 96%;
+	border:  solid 2px blueviolet;
+	border-radius: 7%;
+}
+
+.watchme :not(p){
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 23vw;
+	text-decoration: none;
+	margin-bottom: 1.5vh;
+	color: rgba(239, 32, 147, .8); /*light pink*/
+
+}
+
+aside {
+	margin: 5%;
+}
+
+
+p{
+	color: rgba(239, 32, 147, .8); /*light pink*/
+	text-align: center;
+	font: 2em Arial, Georgia;
+
+}
+
+.middle >img{
+	
+	display: block;
+	width: 60%;
+	border: solid 4px rgba(10, 213, 35, 1.0); /*lime*/
+	border-radius: 25%;
+	margin: 0 auto;
+	color: rgba(239, 32, 147, 0.8);
+
+}
+
+.middle{
+	display: block;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media screen and (max-width: 699px){
+
+	h1{
+		font-size: 250%;
+		position: relative;
+		top: 13vh;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	 h2{
+	 	font-size: 200%;
+	 }
+}
+
+@media screen and (min-width: 768px) {
+
+	header{
+		background-size: 96%;
+	}
+
+	h1{
+		font-size: 270%;
+		position: relative;
+		top: 18vh;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.middle{
+		display: inline-block;
+		box-sizing: border-box;
+		width: 34%;
+		margin: 3%;
+
+	}
+
+	div.left{
+		display: inline-block;
+		box-sizing: border-box;
+		width: 30%;
+		height: 100%;
+		margin: 0 auto;
+		float: left;
+		background: rgba(239, 32, 147, 1.0); /*hot pink*/
+		padding: 1%;
+		}
+
+	.left> img{
+		display: block;
+		width: 99%;
+		padding: .5%;
+	}
+
+	div.right{
+		display: inline-block;
+		box-sizing: border-box;
+		background: rgba(86, 10, 207, 1.0); /*hot blue*/
+		width: 30%;
+		height: 100%;
+		margin: 0 auto;
+		padding: 1%;
+		float: right;
+	}
+
+	.right >img{
+		width: 99%;
+		padding: .5%;
+		}
+	}
+
+	
+@media screen and (min-width: 875px){
+
+	h1{
+		font-size: 300%;
+		position: relative;
+		top: 18vh;
+	}
+
+	header{
+		background-size: 98%;
+		padding: 5%;
+	}
+
+}
+
+@media screen and (min-width: 1100px){
+
+	h2{
+		margin: 0 auto;
+	}
+
+	header{
+		background-size: 50%;
+		background-repeat: repeat-x;
+	}
+}

@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Seth Streamer</title>
+
+        <!-- Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://kit.fontawesome.com/c29276f455.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+       <!-- JavaScript function-->
+       	<script>
+       		function updateCheckbox(){
+	           if (followme.checked) {
+		          document.getElementById('following').innerHTML ="Thank you!";
+		          alert("You are not really following an imaginary streamer!  Thanks for trying out my function -KSolis");
+	           }
+	           else
+		          document.getElementById('following').innerHTML="Follow Me";
+                }
+
+       	</script>
+
+    </head>
+    <body>
+    	<header class="name">
+    		<h1>Seth the Streamer</h1>                         		  			
+    	</header>
+
+    	<div class="fullvp">
+            <div class="mainrow">
+    		<div class="left">
+    			<img src="imgs/pexels-yan-krukov-9072326gamers2.jpg" alt= "gamers">
+    		</div>
+
+    		<main class="middle">
+    			<img src="imgs/pexels-nappy-936119gamerpic.jpg" alt="streamer">
+                <i class="fa-solid fa-headset fa-3x" ></i>
+            </main>
+
+            <div class="right">
+                <img src="imgs/pexels-alena-darmel-7862655streamers.jpg" alt=" team of streamers">
+            </div>
+            </div>
+            <aside>
+                <h2>I'm Boa of Team Constrict</h2>
+    			<p>My name is Seth C. and I play mostly FPS games.  When I'm not playing with Team Constrict, I play on my own.  Come take a seat and watch.</p>
+            </aside>
+    		<br>
+            <div class="label">
+    			<label for="followme" id="following">Follow Me</label>
+    			<input type="checkbox" name="checkbox" id="followme" value="value" onclick="updateCheckbox()">
+            </div>
+    		
+            <div class="watchme">
+                <p> Streaming on:</p>
+                <a href="https//:www.twitch.tv"><i class="fa-brands fa-twitch fa-3x"></i></a>
+                <a href="https//:www.youtube.com"><i class="fa-brands fa-youtube fa-3x"></i></a>
+                <a href="https//:www.discordapp.com"><i class="fa-brands fa-discord fa-3x"></i></a>
+                <a href="https//:www.tiktok.com"><i class="fa-brands fa-tiktok fa-3x"></i></a>
+            
+            </div>
+          
+        </div>
+    	<footer>
+    		<p class= "copyright" >&copy; 2022 created by KSol Web Designs</p>
+            <!-- <a href="https">View code on Codepen</p> -->
+    	</footer>
+    </body>
+</html>
+
